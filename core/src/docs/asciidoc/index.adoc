@@ -1,0 +1,8 @@
+= Test Document
+edward3h
+v1.0
+:toc: left
+
+Hello world.
+
+include::stuff.txt[]

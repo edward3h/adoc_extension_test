@@ -1,0 +1,20 @@
+plugins {
+    id 'org.asciidoctor.jvm.convert' version '3.3.0'
+}
+
+repositories {
+    jcenter()
+}
+
+configurations {
+    asciidoctorExtensions
+}
+
+dependencies {
+    asciidoctorExtensions project(':extension')
+}
+
+asciidoctor {
+    configurations 'asciidoctorExtensions'
+    baseDirFollowsSourceFile()
+}

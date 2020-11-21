@@ -1,0 +1,3 @@
+rootProject.name = 'adoc_extension_test'
+include 'core'
+include 'extension'
