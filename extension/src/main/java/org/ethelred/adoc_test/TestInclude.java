@@ -30,9 +30,9 @@ public class TestInclude extends IncludeProcessor
         String data;
         try
         {
-            data = Files.readAllLines(Paths.get(target)).get(0);
+            data = Files.readAllLines(Paths.get(reader.getDir(), target)).get(0);
         } catch (IOException e) {
-            data = e.getMessage();
+            data = e.toString();
         }
         reader.push_include(
             data,
